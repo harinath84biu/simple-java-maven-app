@@ -43,7 +43,7 @@ pipeline {
         
         steps {
         
-       scp target/my-app-1.0-SNAPSHOT.jar harinath84biu@54.149.242.5:/path/to/destination
+       scp target/my-app-1.0-SNAPSHOT.jar harinath84biu@54.149.242.5:/tmp/
         sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
         }
     }
