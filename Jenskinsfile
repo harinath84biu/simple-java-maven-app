@@ -43,8 +43,8 @@ pipeline {
         
         steps {
         
-       scp target/my-app-1.0-SNAPSHOT.jar harinath84biu@54.149.242.5:/tmp/
-        sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
+       scp -o StrictHostKeyChecking=no -i /tmp/my.pem target/my-app-1.0-SNAPSHOT.jar centos@35.162.82.35:/tmp/
+       ssh -i /tmp/my.pem centos@35.162.82.35 java -jar /tmp/my-app-1.0-SNAPSHOT.jar
         }
     }
         }
