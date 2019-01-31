@@ -50,7 +50,7 @@ pipeline {
 
                     url: "http://54.149.242.5:8081/artifactory/webapp/#/home",
 
-                    credentialsId: CREDENTIALS
+                    credentialsId: "52344d01-0f63-4ad3-965e-4ea3efc6638a"
 
                 )
 
