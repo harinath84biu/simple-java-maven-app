@@ -94,7 +94,7 @@ pipeline {
 
                 rtMavenRun (
 
-                    tool: MAVEN_TOOL, // Tool name from Jenkins configuration
+                    tool: "maven", // Tool name from Jenkins configuration
 
                     pom: 'maven-example/pom.xml',
 
