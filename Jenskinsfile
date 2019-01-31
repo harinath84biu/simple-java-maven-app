@@ -42,6 +42,8 @@ pipeline {
         stage('Deploy') {
         
         steps {
+        
+       scp target/my-app-1.0-SNAPSHOT.jar harinath84biu@54.149.242.5:/path/to/destination
         sh 'java -jar target/my-app-1.0-SNAPSHOT.jar'
         }
     }
